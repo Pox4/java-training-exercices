@@ -157,7 +157,7 @@ public class MapAppTest {
 
         // little help for using entries
         for (Map.Entry<Integer, String> entry: map.entrySet()){
-            System.out.println( entry.getKey() + ">>>>"+ entry.getValue());
+           // System.out.println( entry.getKey() + ">>>>"+ entry.getValue());
         }
 
         List<Integer> keysFromValue= app.getKeysHavingValue(map, "John");

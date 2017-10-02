@@ -5,36 +5,97 @@ package io.robusta.java.classic;
  */
 public class ArrayApp {
 
+	String[] buildEmptyArray(int size) {
 
+		String[] emptyArray = new String[size];
 
-    String[] buildEmptyArray(int size){
-        return null;
-    }
+		return emptyArray;
+	}
 
-    int[] buildArray(int a, int b, int c){
-        return null;
-    }
+	int[] buildArray(int a, int b, int c) {
 
+		int[] array = { a, b, c };
 
-    boolean equality(int[] array1, int[] array2){
+		return array;
+	}
 
-        return false;
-    }
+	boolean equality(int[] array1, int[] array2) {
 
-    String asString (int [] numbers){
-        return null;
-    }
+		if (array1 == array2)
+			return false;
 
-    String asStringJoin (int [] numbers){
-        return null;
-    }
+		if (array1.length != array2.length)
+			return false;
 
-    String asString (String [] strings){
-        return null;
-    }
+		for (int i = 0; i < array1.length; i++) {
 
-    String asString (Card [] cards){
-        return null;
-    }
+			if (array1[i] != array2[i])
+
+				return false;
+
+		}
+
+		return true;
+
+	}
+
+	
+
+	String asString(int[] numbers) {
+
+		String chaine = "";
+		for (int i = 0; i < numbers.length; i++) {
+			chaine = chaine + numbers[i] + ":";
+		}
+
+		return chaine;
+
+	}
+
+	String asStringJoin(int[] numbers) {
+
+		String chaine = "";
+		
+		for (int i = 0; i < numbers.length; i++) {
+			chaine = chaine + numbers[i] + ":";
+		}
+
+		chaine = chaine.substring(0, chaine.length() - 1);
+
+		return chaine;
+
+	}
+
+	String asString(String[] strings) {
+
+		
+		String chaine = "";
+		for (int i = 0; i < strings.length; i++) {
+			chaine = chaine + strings[i] + " ";
+			
+		}
+		
+		chaine = chaine.substring(0, chaine.length() - 1);
+		
+		return chaine;
+
+	}
+	
+	
+	
+
+	String asString(Card[] cards) {
+		
+		
+		String chaine = "[";
+		for (int i = 0; i < cards.length; i++) {
+			chaine = chaine + cards[i] + " ";
+			
+		}
+		
+		chaine = chaine.substring(0, chaine.length() - 1) + "]";
+		
+		return chaine;
+	}
 
 }

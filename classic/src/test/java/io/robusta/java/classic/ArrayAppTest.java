@@ -50,24 +50,41 @@ public class ArrayAppTest {
 
     }
 
+    
+    
+    
     @Test
     public void asStringNumbers() throws Exception {
         int[] a1 = {2,4,6};
         assertEquals("2:4:6:",app.asString(a1));
+        
+        
     }
 
+    
+    
+    
+    
     @Test
     public void asStringJoin() throws Exception {
         int[] a1 = {2,4,6, 8, 10};
         assertEquals("2:4:6:8:10",app.asStringJoin(a1));
     }
 
+    
+    
+    
     @Test
     public void asStringStrings() throws Exception {
         String[] strings = {"Yo", "Are","You", "Doing"};
         assertEquals("Yo Are You Doing",app.asString(strings));
     }
 
+    
+    
+    
+    
+    
     @Test
     public void asStringCards() throws Exception {
         Card c1 = new Card(9,'s');

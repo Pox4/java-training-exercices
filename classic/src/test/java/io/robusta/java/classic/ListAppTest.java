@@ -53,6 +53,8 @@ public class ListAppTest {
         List<Integer> list1 = app.buildList(2,4,6);
         assertTrue(2==app.first(list1));
     }
+    
+    
 
     @Test
     public void last() throws Exception {
@@ -60,6 +62,8 @@ public class ListAppTest {
         assertTrue(10==app.last(list1));
     }
 
+    
+    
     @Test
     public void medium() throws Exception {
         List<Integer> list1 = app.buildList(2,4,6);

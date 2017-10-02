@@ -1,9 +1,12 @@
-
+.project
 .idea/
 *.pdf
 *.iml
 *.zip
 .~lock*
+.classpath
+.settings/
+
 
 ### Node template
 # Logs
