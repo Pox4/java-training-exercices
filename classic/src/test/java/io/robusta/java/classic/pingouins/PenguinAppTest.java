@@ -125,8 +125,8 @@ public class PenguinAppTest {
     }
 
 
-
-
+// Ne pas faire :
+/*
     @Test
     public void  getFriends(){
         List<Penguin> friends = app.getFriends(bigArray);
@@ -141,5 +141,5 @@ public class PenguinAppTest {
         assertEquals(0, friends.size());
     }
 
-
+*/
 }
